@@ -1,0 +1,36 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/navigation/amcl/include/**",
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/aquerdan/include/**",
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/navigation/base_local_planner/include/**",
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/navigation/carrot_planner/include/**",
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/navigation/clear_costmap_recovery/include/**",
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/navigation/costmap_2d/include/**",
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/navigation/dwa_local_planner/include/**",
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/f110_race_nodes/include/**",
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/f1tenth_simulator/include/**",
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/navigation/global_planner/include/**",
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/navigation/map_server/include/**",
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/navigation/move_base/include/**",
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/navigation/move_slow_and_clear/include/**",
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/navigation/nav_core/include/**",
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/navigation/navfn/include/**",
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/neo_common/include/**",
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/neo_kinematics_omnidrive/include/**",
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/navigation/rotate_recovery/include/**",
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/navigation/voxel_grid/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

@@ -1,0 +1,8 @@
+prefix=/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/devel
+
+Name: f1tenth_simulator
+Description: Description of f1tenth_simulator
+Version: 0.0.1
+Cflags: -I/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/f1tenth_simulator/include
+Libs: -L${prefix}/lib -lf1tenth_simulator
+Requires: message_runtime

@@ -1,0 +1,31 @@
+# placeholder for config parameters
+
+PLANNER_TYPE      :     "weighted"          # could be: "weighted" or "swithed" 
+
+drive_global      :     "/drive_global"     # path planner: pure pursuit    n
+drive_local       :     "/drive_local"      # obstacle avoider: braitenberg
+drive             :     "/drive"            # path planner drive
+odom_topic        :     "/odom"             # odometry topic                    
+scan_topic        :     "/scan"             # LIDAR reading topic
+path_topic        :     "/path"             # path plot topic
+raceline_path     :     "/raceline_path"    # raceline plot topic       
+steer_curvature   :     "/steer_curvature"  # curvature plot topic   
+
+###########################
+# Brait params:
+sectors           :     64 #64 #22
+turn_dist         :     2.5 #2.5 #2.5
+delta_turn        :     0.01 #0.01
+
+# Pure pursuit params:
+lookahead_distance  :   2 #2 ok # 3 FOR LONG lad
+P_GAIN              :   0.75 #0.75 # good 
+
+
+# G + L planner:
+  #speed:
+global_speed_weight    :   1.0 #1.0
+local_speed_weight     :   0.0 #0.0
+  # steering:
+global_steer_weight    :   1.0 #1
+local_steer_weight     :   0.85 #0.85

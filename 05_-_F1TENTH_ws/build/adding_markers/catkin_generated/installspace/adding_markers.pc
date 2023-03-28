@@ -1,0 +1,8 @@
+prefix=/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/install
+
+Name: adding_markers
+Description: Description of adding_markers
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

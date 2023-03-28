@@ -1,0 +1,8 @@
+prefix=/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/devel
+
+Name: neo_msgs
+Description: Description of neo_msgs
+Version: 0.1.0
+Cflags: -I/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/erq/Documents/Proyecto_electrico/05_-_F1TENTH_ws/devel/lib/python3/dist-packages",
+        "/home/erq/rosquink_cws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/erq/Documents/Proyecto_electrico/05_-_F1TENTH_ws/devel/lib/python3/dist-packages",
+        "/home/erq/rosquink_cws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}

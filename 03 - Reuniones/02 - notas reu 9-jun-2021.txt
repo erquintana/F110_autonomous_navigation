@@ -1,0 +1,22 @@
+Modelado de Ackerman que se compró en el lab
+para poder realizar simulación offline 
+
+Modelar un robot móvil en configuración ackerman
+con el 
+
+Sacar modelo SW
+Pasar a Gazebo
+Pasar parametros del F1/10 y pasar a Gazebo
+
+Dependo de la matrícula de mañana para saber si 
+matricular Proyecto o no.
+
+
+Semana del 15:
+	Profesores:
+		Federeico
+		Jose David
+		Mercedez
+		Helber
+		Marvin Coto
+	Redacción de objetivos 

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libaquerdan.so -o /home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/devel/lib/libaquerdan.so CMakeFiles/aquerdan.dir/src/PID.cpp.o 

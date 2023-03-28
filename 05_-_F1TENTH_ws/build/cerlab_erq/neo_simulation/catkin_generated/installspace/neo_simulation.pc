@@ -1,0 +1,8 @@
+prefix=/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/install
+
+Name: neo_simulation
+Description: Description of neo_simulation
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

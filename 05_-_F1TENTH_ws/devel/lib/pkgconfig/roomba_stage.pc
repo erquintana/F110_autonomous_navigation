@@ -1,0 +1,8 @@
+prefix=/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/devel
+
+Name: roomba_stage
+Description: Description of roomba_stage
+Version: 0.2.4
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

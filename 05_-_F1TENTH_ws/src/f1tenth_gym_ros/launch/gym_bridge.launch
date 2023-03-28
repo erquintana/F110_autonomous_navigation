@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!--======================================================================================
+    Launch node for f110 simulator. You can choose bedween tracks depending
+    on map your fill in TRACK_folder and TRACK_file.
+    -> Change TRACK_file default value for desired track. List of available tracks:
+            · Example
+            · Catalunya
+            · IMS
+            · MoscowRaceway
+            · Monza
+            · Vegas
+            · Oschersleben      raceline too tight, isn't good
+            · Skirk
+            · Zandvoort
+            · Silverstone       raceline too tight, isn't good. Use centerline!!
+            · Blank
+    -> Track have centerline and raceline csv
+    ======================================================================================-->
+<launch>
+    <!--=======================================================================_obstacles===========-->
+    <!--  track settings: -->
+    <arg name   =   "TRACK_folder"          default     =     "Catalunya"/>
+    <arg name   =   "LINE"                  default     =     "raceline"/>
+    <!--  track settings: -->
+    <arg name   =   "TRACK_file"          default     =     "$(arg TRACK_folder)_map"/>
+    <arg name   =   "WPTS"           default     =     "$(arg TRACK_folder)"/>
+    <!--==================================================================================-->
+    
+    <arg name   =   "map"       default="$(find f1tenth_gym_ros)/project_maps/$(arg TRACK_folder)/$(arg TRACK_file).yaml"/>   
+    <param name =   "track"     value="$(arg TRACK_folder)"/>
+    <param name =   "map_path"  value="$(arg map)"/>
+    <param name =   "wpts_path" value="/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/f1tenth_gym_ros/project_maps/$(arg WPTS)/$(arg WPTS)_$(arg LINE).csv"/>
+    
+    <rosparam file  =   "$(find f1tenth_gym_ros)/config/params.yaml" command    =   "load"/>
+    <rosparam file  =   "$(arg map)" command    =   "load"/>
+
+    <!-- Packages nodes: -->
+    <node pkg="map_server" name="map_server" type="map_server" args="$(arg map)"/>
+    <node pkg="f1tenth_gym_ros" name="gym_bridge" type="gym_bridge.py" output="screen"/>
+    <!-- Launch robot model -->
+    <include file="$(find f1tenth_gym_ros)/launch/racecar_model.launch"/>
+    <include file="$(find f1tenth_gym_ros)/launch/gym_bridge_host.launch"/>
+
+
+</launch>

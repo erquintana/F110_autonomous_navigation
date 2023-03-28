@@ -1,0 +1,25 @@
+Pista simple con punto desentralizado 
+Pista simple con punto desentralizado + brait para seguimiento obstaculos
+
+Si hay trayectoria dada
+importante parametrizar algoritmos y explicación de los modelos utilizados
+
+Investigación para centralizar información y parametros de modelos y demas
+
+
+https://f1tenth.org/build.html
+
+NOTAS:
+	agregar lo del F1/10 vehiculos escala F1 al título o en algún lado
+	
+Objetivos ocultos:
+	1. Utilización de los modelos dinámicos de ackerman para incluir derrape  y otras condiciones en alta velocidad.
+	2. Implementación del VHF
+	3. Valorar otros algoritmos necesarios para la F1/10.
+
+Describir la plataforma física y modelo o modelos matemáticos además de algoritmos necesarios para competir
+
+NO dejar explicito que se trabaja algo con gazeb0
+
+
+Agregar pruebas en circuitos 

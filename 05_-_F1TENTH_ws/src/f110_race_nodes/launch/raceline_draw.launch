@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<launch>
+  <!--======================================================================================
+      Launch node for pure pursuit algorithm. You can choose bedween track params depending
+      on map your simulation is using.
+      -> Change TRACK default value for desired track. List of available tracks:
+                  · Example
+                  · Catalunya
+                  · IMS
+                  · MoscowRaceway
+                  · Monza
+                  · Oschersleben
+                  · Skirk
+                  · Zandvoort
+                  · Silverstone  
+                  · Blank          
+
+      -> Change ALGORITHM default value for desired navigation. List of available algorithms:
+                  · PP      :     pure Pursuit
+                  · BTG     :     Braitenberg
+                  · BTGP    :     baitennberg+
+                  · PP&BTG  :     pure Pursuit & braitenberg -> (Path tracking + Obstable avoidance)
+
+        ======================================================================================-->
+        <!--==================================================================================-->
+        <!--  track settings: -->
+        <arg name   =   "TRACK"   default    =  "Catalunya"/>
+
+        <!--  algorithm settings: -->
+        <arg name   =   "ALGORITHM" default  =  "PP"/>
+
+        <!--==================================================================================-->
+
+        <rosparam file="$(find f110_race_nodes)/config/$(arg TRACK)_$(arg ALGORITHM)_params.yaml" command="load"/>
+        <rosparam file="$(find f110_race_nodes)/config/config.yaml" command="load"/>
+        <!-- ============================================================ -->
+        
+ 
+        <node pkg="f110_race_nodes" type="raceline_viz.py" name="raceline_viz"  />   <!-- you can lauch executables as nodes :) -->
+        
+
+    </launch>

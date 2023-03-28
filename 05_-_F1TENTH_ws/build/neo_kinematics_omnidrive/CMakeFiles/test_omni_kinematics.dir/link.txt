@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/test_omni_kinematics.dir/test/test_omni_kinematics.cpp.o  -o /home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/devel/lib/neo_kinematics_omnidrive/test_omni_kinematics 

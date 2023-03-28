@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/erq/Documents/Proyecto_electrico/05_-_F1TENTH_ws/devel/include/**",
+        "/home/erq/rosquink_cws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/erq/Documents/Proyecto_electrico/05_-_F1TENTH_ws/src/f1tenth_simulator/include/**",
+        "/home/erq/rosquink_cws/src/neo_common/include/**",
+        "/home/erq/rosquink_cws/src/neo_kinematics_omnidrive/include/**",
+        "/home/erq/rosquink_cws/src/openslam_gmapping/include/**",
+        "/home/erq/rosquink_cws/src/rdif_cerlab/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

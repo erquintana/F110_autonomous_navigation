@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <include file="$(find f1tenth_gym_ros)/launch/gym_bridge_host.launch"/>
+
+  <node pkg="joy" type="joy_node" name="joy" output="screen"/>
+  <node pkg="aquerdan" type="heading_tester" name="heading_tester" output="screen"/>
+
+  <!-- VFH+D local planner 
+  <include file="$(find aquerdan)/launch/vfhpd_ackermann.launch"/>
+    -->
+
+  <!-- VFH+ rviz tools
+  <node pkg="vfhp_local_planner" type="point_follower.py" name="point_follower"/>
+
+  <node pkg="aquerdan" type="heading_follower" name="heading_follower" output="screen">
+    <param name="kp" type="double" value="2.5"/>
+    <param name="ti" type="double" value="10"/>
+    <param name="td" type="double" value="0"/>
+    <param name="freq" type="double" value="60"/>
+    <param name="l_wb" type="double" value="0.3302"/>
+  </node>
+  -->
+
+</launch>

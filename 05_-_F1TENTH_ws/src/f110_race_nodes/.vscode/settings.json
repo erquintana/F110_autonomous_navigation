@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "./scripts/nav_nodes/pure_pursuit"
+    ]
+}

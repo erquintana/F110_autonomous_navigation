@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/test_velocity_solver.dir/test/test_velocity_solver.cpp.o  -o /home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/devel/lib/neo_kinematics_omnidrive/test_velocity_solver 

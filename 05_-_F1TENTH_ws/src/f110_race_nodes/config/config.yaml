@@ -1,0 +1,9 @@
+# placeholder for config parameters
+
+drive_global      :     "/drive"     # path planner: pure pursuit    
+drive_local       :     "/drive_local"      # obstacle avoider: braitenberg
+drive             :     "/drive"            # path planner drive
+odom_topic        :     "/odom"             # odometry topic                    
+path_topic        :     "/path"             # path plot topic
+raceline_path     :     "/raceline_path"    # raceline plot topic       
+steer_curvature   :     "/steer_curvature"  # curvature plot topic     

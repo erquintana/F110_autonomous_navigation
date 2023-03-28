@@ -1,0 +1,10 @@
+image: Blank_map.png
+resolution: 0.06016
+origin: [-160,-25, 0.000000]
+negate: 0
+occupied_thresh: 0.45
+free_thresh: 0.196
+# Initial states for Catalunya track:
+initial_heading:   0.785 # 3.14/4
+initial_x:   0.0
+initial_y:   0.0

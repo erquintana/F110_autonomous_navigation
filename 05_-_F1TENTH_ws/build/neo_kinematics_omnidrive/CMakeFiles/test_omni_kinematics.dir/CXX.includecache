@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/neo_kinematics_omnidrive/include/OmniKinematics.h
+OmniWheel.h
+/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/neo_kinematics_omnidrive/include/OmniWheel.h
+angles/angles.h
+-
+vector
+-
+stdexcept
+-
+math.h
+-
+
+/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/neo_kinematics_omnidrive/include/OmniWheel.h
+math.h
+-
+string
+-
+
+/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/neo_kinematics_omnidrive/test/test_omni_kinematics.cpp
+../include/OmniKinematics.h
+/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/src/neo_kinematics_omnidrive/include/OmniKinematics.h
+iostream
+-
+
+/opt/ros/noetic/include/angles/angles.h
+algorithm
+-
+cmath
+-
+

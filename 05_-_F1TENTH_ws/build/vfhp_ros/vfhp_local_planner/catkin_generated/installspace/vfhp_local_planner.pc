@@ -1,0 +1,8 @@
+prefix=/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/install
+
+Name: vfhp_local_planner
+Description: Description of vfhp_local_planner
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs nav_msgs roscpp rospy message_runtime std_msgs sensor_msgs tf2 tf2_ros std_srvs

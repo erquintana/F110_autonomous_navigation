@@ -1,0 +1,72 @@
+*********************************************************************
+*                                                                   *
+*   This minutes are intended for logging some working notes        *
+*   and remenber things done and later TODO, IN PROCESS and DONE.   *
+*                                                                   *
+*********************************************************************
+02/OCTUBER/2021:
+    ·TODO: Revisar la biblioteca para agregar "odómetros" 
+    ·TODO: parametrice all topics in a config file yaml or launch for
+    parameter server
+    
+    ·IN PROCESS: 
+
+    ·DONE: Revisar si se puede publicar en el topic de /initialpose para
+    reiniciar la posición del robot. => This atempt didn't work.
+    ·DONE: draw raceline for rviz visualization :)
+
+--------------------------------------------------------------------
+03/OCTUBER/2021:
+    ·TODO: Begin implementation of PP&BTG navigation. Could be diferent
+    drive topic for echa node, then, have a node where drive msgs from 
+    PP (/drive_PP or /global_plan) and BTG (/drive_BTG or /local_plan) are sum weighted and published 
+    to /drive for Ackerman actuation.
+    Obstacle manager, local planner, global planner, task manager, PID velocity, movement manager
+    ·TODO: Define how to remedy rotation of waypoints respecto to map
+    Check image in gym env
+    ·TODO: Check /race_info for lap time log
+    ·TODO: Control methode for getting and pusblish valocities in 
+    an optimizated way
+
+    ·IN PROCESS: Working on make pp_utils a class for handeling radius viz info
+    ·IN PROCESS:
+    
+    ·DONE: Path Planning with catalunya params ready 
+    ·DONE: catalunya map, ready
+
+04/OCTUBER/2021:
+    ·TODO: Changes to radius calculation depending on lookahead_distance
+    ·TODO:
+
+    ·IN PROCESS:
+    ·IN PROCESS:
+    
+    ·DONE: modify some parameter for track pp algorithm
+    ·DONE:
+********************************************************************
+********************************************************************
+********************************************************************
+IDEAS:
+    -   Medir odometría con lidar
+    -   hacer una interfaz para vizualizar los datos de /drive
+    -   meta para medición de tiempo de vuelta
+            > Usar el topic de /race_info.
+            > Arreglar el punto de partida.
+    -   implementar multinode para comparar visualmente los algoritmos con dos ackerman
+    -   hacer un file para definir constraints o parametros de algoritmos
+    
+
+********************************************************************
+********************************************************************
+********************************************************************
+"Machote" space:
+--------------------------------------------------------------------
+DAY_NUM/MONTH_NAME/YEAR:
+    ·TODO:
+    ·TODO:
+
+    ·IN PROCESS:
+    ·IN PROCESS:
+    
+    ·DONE:
+    ·DONE:

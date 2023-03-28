@@ -1,0 +1,10 @@
+image: Silverstone_map.png
+resolution: 0.07712
+origin: [-43.82482139791572,-52.30388391024793, 0.000000]
+negate: 0
+occupied_thresh: 0.45
+free_thresh: 0.196
+# Initial states for Catalunya track:
+initial_heading:   0.9045299
+initial_x:   0.0
+initial_y:   0.0

@@ -1,0 +1,15 @@
+# Configuration file for pure pursuit in Catalunya map circuit for  
+# parameter loading
+
+X_IDX               :   1
+Y_IDX               :   2
+THEHA_IDX           :   3
+VEL_IDX             :   5
+SKIP_ROWS           :   1
+DELIMITER           :   ";"
+max_reacquire       :   20.0
+
+ackerman_wheel_base :   0.3302
+
+lookahead_distance  :   2 #2 #1.0 # good 1.5 # 3 FOR LONG lad
+P_GAIN              :   1.5 #0.75 # good 

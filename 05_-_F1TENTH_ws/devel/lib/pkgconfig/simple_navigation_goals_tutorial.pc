@@ -1,0 +1,8 @@
+prefix=/home/raqun/Documents/Proyecto_electrico/ackerman-f1tenth-competition/05_-_F1TENTH_ws/devel
+
+Name: simple_navigation_goals_tutorial
+Description: Description of simple_navigation_goals_tutorial
+Version: 0.2.4
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

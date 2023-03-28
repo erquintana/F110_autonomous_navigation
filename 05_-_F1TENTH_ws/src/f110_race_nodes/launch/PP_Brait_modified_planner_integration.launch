@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<launch>
+  <!--======================================================================================
+      Launch node for pure pursuit algorithm. You can choose bedween track params depending
+      on map your simulation is using.
+      -> Change TRACK default value for desired track. List of available tracks:
+                  · Example
+                  · Catalunya
+                  · IMS
+                  · MoscowRaceway
+                  · Monza
+                  · Oschersleben
+                  · Skirk
+                  · Zandvoort
+                  · Silverstone  
+                  · Blank          
+
+      -> Change ALGORITHM default value for desired navigation. List of available algorithms:
+                  · PP           :     pure_pursuit
+                  · BTG          :     braitenberg
+                  · BTGP         :     baitennberg+
+                  · PathPlanner  :     path_planner    -> pure_pursuit_&_braitenberg -> (Path tracking + Obstable avoidance)
+
+        ======================================================================================-->
+        <!--==================================================================================-->
+        <!--  track settings for algorithm params: -->
+        <arg name   =   "TRACK"   default    =  "Example"/>
+
+        <!--  algorithm settings: -->
+        <arg name   =   "ALGORITHM_ID" default  =  "PP"/>
+        <arg name   =   "ALGORITHM" default  =  "pure_pursuit"/>
+
+        <!--==================================================================================-->
+        <rosparam file="$(find f110_race_nodes)/config/track_algorithm_params/$(arg TRACK)_$(arg ALGORITHM_ID)_params.yaml" command="load"/>
+        <rosparam file="$(find f110_race_nodes)/config/planners_config_$(arg TRACK).yaml" command="load"/>
+        <!-- ============================================================ --> 
+        
+      <!--
+        <node pkg="f110_race_nodes" type="gl_nodes.sh" name="gl_nodes"/> 
+      -->  
+        <node pkg="f110_race_nodes" type="raceline_viz.py" name="raceline_viz_node"/>
+        <node pkg="f110_race_nodes" type="path_plotter.py" name="path_plotter_node"/>
+        <node pkg="f110_race_nodes" type="local_braitenberg_modified.py" name="local_braitenberg_modified"/> 
+        <node pkg="f110_race_nodes" type="global_pure_pursuit.py" name="global_pure_pursuit"/> 
+        <node pkg="f110_race_nodes" type="PP_Brait_modified_nav_node.py" name="PP_Brait_modified_nav_node"/> 
+    </launch>

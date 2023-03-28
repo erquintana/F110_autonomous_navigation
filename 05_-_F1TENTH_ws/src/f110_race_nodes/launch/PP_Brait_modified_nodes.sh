@@ -1,0 +1,2 @@
+#!/bin/bash
+gnome-terminal --window -e "rosrun f110_race_nodes gl_pure_pursuit.py" --tab -e  "rosrun f110_race_nodes gl_braitenberg_modified.py" --tab -e  "rosrun f110_race_nodes path_plotter.py" --tab -e  "rosrun f110_race_nodes raceline_viz.py" --tab -e  "rosrun f110_race_nodes PP_Brait_modified_nav_node.py"

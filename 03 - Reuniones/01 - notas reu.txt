@@ -1,0 +1,4 @@
+1. Probar el extendido del toolbox
+2. Buscar implementaciones en MATLAB o GAZEBO pero 
+que no sean del toolbox
+3. Encontrar implementación del toolbox

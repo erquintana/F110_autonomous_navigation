@@ -1,0 +1,18 @@
+Para correr simulación f1tenth_gym_ros:
+    **NEW TERMINAL     
+    cd ~/Documents/Proyecto_electrico/05_-_F1TENTH_ws/src/f1tenth_gym_ros
+    sudo ./build_docker.sh **solamente despues de modificar f1tenth_gym
+    ./docker.sh
+    **NEW TERMINAL
+    ./run_sim.sh
+
+Para cambiar mapa de f1tenth_gym_ros:
+    agregar mapas en f1tenth_gym_ros/maps y f1tenth_gym/maps
+    cambiar nombre en de map_path f1tenth_gym_ros/params.yaml 
+    cambiar nombre de mapa en f1tenth_gym_ros/launch/gym_bridge.launch  
+    **NEW TERMINAL
+    cd ~/Documents/Proyecto_electrico/05_-_F1TENTH_ws/src/f1tenth_gym_ros
+    sudo ./build_docker.sh en 
+
+Para cambiar la orientación dependiendo de la pista:
+    gym_bridge.py ->    ORIENTATION

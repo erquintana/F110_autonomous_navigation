@@ -1,0 +1,7 @@
+set(vfhp_local_planner_SETUP_PY_SETUP_MODULE "distutils.core")
+set(vfhp_local_planner_SETUP_PY_VERSION "0.0.0")
+set(vfhp_local_planner_SETUP_PY_SCRIPTS "scripts/vfhp_node.py")
+set(vfhp_local_planner_SETUP_PY_PACKAGES "Planners")
+set(vfhp_local_planner_SETUP_PY_PACKAGE_DIRS "src/Planners")
+set(vfhp_local_planner_SETUP_PY_MODULES "")
+set(vfhp_local_planner_SETUP_PY_MODULE_DIRS "")

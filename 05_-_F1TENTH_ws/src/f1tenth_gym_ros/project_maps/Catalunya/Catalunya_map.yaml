@@ -1,0 +1,10 @@
+image: Catalunya_map_obst.png
+resolution: 0.06016
+origin: [-91.90749878749725,-75.75284314488522, 0.000000]
+negate: 0
+occupied_thresh: 0.45
+free_thresh: 0.196
+# Initial states for Catalunya track:
+initial_heading:   -1.75
+initial_x:   0.5549085
+initial_y:   -0.6243834

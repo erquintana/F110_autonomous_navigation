@@ -1,0 +1,9 @@
+NOTAS:	
+	1. Escribirle a Jose David para ser profesor lector del Proyecto Eléctrico.
+	2. Ros gazebo 
+	
+		a. Seguir un punto
+		b. Seguir trayectoria
+		
+	3. Pedir al profe que mande el código del ackerman y el libro del modelado.
+	4. Sistemas de parqueo automático.

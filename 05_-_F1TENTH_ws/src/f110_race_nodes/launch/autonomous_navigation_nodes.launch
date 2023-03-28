@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<launch>
+  <!--======================================================================================
+      Launch node for pure pursuit algorithm. You can choose bedween track params depending
+      on map your simulation is using.
+      -> Change TRACK default value for desired track. List of available tracks:
+                  · Example *
+                  · Catalunya **
+                  · Zandvoort ***
+                  · IMS
+                  · MoscowRaceway
+                  · Monza
+                  · Oschersleben
+                  · Skirk
+                  · Silverstone  
+                  · Blank          
+
+      -> Change ALGORITHM default value for desired navigation. List of available algorithms:
+                  · PP           :     pure_pursuit
+                  · BTG          :     braitenberg
+                  · BTGP         :     baitennberg+
+        ======================================================================================-->
+        <!--==================================================================================-->
+        <!--  track settings for algorithm params: -->
+        <arg name   =   "TRACK"   default    =  "Catalunya"/>
+
+        <!--  algorithm settings: -->
+        <arg name   =   "ALGORITHM_ID" default  =  "PP"/>
+        <arg name   =   "ALGORITHM" default  =  "pure_pursuit"/>
+
+        <!--==================================================================================-->
+        <rosparam file="$(find f110_race_nodes)/config/track_algorithm_params/$(arg TRACK)_$(arg ALGORITHM_ID)_params.yaml" command="load"/>
+        <rosparam file="$(find f110_race_nodes)/config/config.yaml" command="load"/>
+        <!-- ============================================================ --> 
+        <!-- 
+        <node pkg="f110_race_nodes" type="path_plotter.py" name="path_plotter_node"/>
+        <node pkg="f110_race_nodes" type="raceline_viz.py" name="raceline_viz_node"/>
+        <node pkg="f110_race_nodes" type="path_plotter.py" name="path_plotter_node"/>
+        <node pkg="f110_race_nodes" type="$(arg ALGORITHM).py" name="$(arg ALGORITHM)_node"/> 
+        -->
+      
+        <node pkg="f110_race_nodes" type="$(arg ALGORITHM_ID)_nodes.sh" name="$(arg ALGORITHM)_nodes"  />  <!-- you can lauch executables as nodes :) -->
+
+    </launch>
